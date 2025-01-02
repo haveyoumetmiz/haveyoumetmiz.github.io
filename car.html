@@ -1,104 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-	<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="script.js" defer></script>
-	<meta name="description" content="Portfolio of Mizhab K Ansar, showcasing innovative projects including a webcam-controlled car racing game.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <meta name="description" content="Portfolio of Mizhab K Ansar, showcasing innovative projects including a webcam-controlled car racing game.">
+    <style>
+        /* Main Style for body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #0d2538;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo img {
+            width: 120px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #00a9e2;
+        }
+
+        /* Main Section Styles */
+        .intro {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .intro h3 {
+            color: #00a9e2;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .intro ul {
+            list-style: none;
+            padding: 0;
+            font-size: 16px;
+            color: #444;
+        }
+
+        .intro ul li {
+            margin-bottom: 10px;
+        }
+
+        .intro ul li strong {
+            color: #00a9e2;
+        }
+
+        /* Contact Section */
+        #contact {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            margin: 0 15px;
+            color: #333;
+            font-size: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #00a9e2;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #0d2538;
+            color: #fff;
+        }
+
+        footer a {
+            color: #00a9e2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+    </style>
 </head>
+
 <body>
-	<div class="container">
-		<header>
-			<a class="logo" href="index.html">
-				<img src="port.png" alt="Repl logo" />
-			</a>
-			<nav>
-				<ul class="nav-bar">
-					<div class="bg"></div>
-					<li><a class="nav-link active" href="index.html">Home</a></li>
-					<li><a class="nav-link" href="index.html#projects">Projects</a></li>
-					<li><a class="nav-link" href="index.html#contact">Contact</a></li>
-					<li><a class="nav-link" href="aboutme.html">About Me</a></li>
-				</ul>
-				<div class="hamburger">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
-				</div>
-			</nav>
-		</header>
+    <div class="container">
+        <header>
+            <a class="logo" href="index.html">
+                <img src="port.png" alt="Repl logo" />
+            </a>
+            <nav>
+                <ul class="nav-bar">
+                    <div class="bg"></div>
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="index.html#projects">Projects</a></li>
+                    <li><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li><a class="nav-link" href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
 
-		<main>
-			<div id="home">
-				<section class="intro">
-					<h3>Innovative Car Racing Game</h3>
-					<p><h2 style="color: #00a9e2;">Objective:</h2> Created a car racing game controlled by a webcam-detected circular object (like a plate), replacing traditional keyboard inputs.</p>
-					<p><h2 style="color: #00a9e2;">Overview:</h2> The game merges physical interaction with virtual gameplay, allowing players to steer and accelerate using real-world movements.</p>
-					<p><h2 style="color: #00a9e2;">Key Features:</h2></p>
-					<ul>
-						<li><strong>Object Detection:</strong> Uses OpenCV to track a circular object and translate its movements into in-game controls.</li>
-						<li><strong>Realistic Controls:</strong> Rotate the object to steer and tilt it for acceleration.</li>
-						<li><strong>Customizable Gameplay:</strong> Multiple tracks, car models, and difficulty levels.</li>
-					</ul>
-				</section>
-			</div>
+        <main>
+            <section class="intro">
+                <h3>Innovative Car Racing Game</h3>
+                <p><strong style="color: #00a9e2;">Objective:</strong> Created a car racing game controlled by a webcam-detected
+                    circular object (like a plate), replacing traditional keyboard inputs.</p>
+                <p><strong style="color: #00a9e2;">Overview:</strong> The game merges physical interaction with virtual gameplay,
+                    allowing players to steer and accelerate using real-world movements.</p>
+                <p><strong style="color: #00a9e2;">Key Features:</strong></p>
+                <ul>
+                    <li><strong>Object Detection:</strong> Uses OpenCV to track a circular object and translate its movements into in-game controls.</li>
+                    <li><strong>Realistic Controls:</strong> Rotate the object to steer and tilt it for acceleration.</li>
+                    <li><strong>Customizable Gameplay:</strong> Multiple tracks, car models, and difficulty levels.</li>
+                </ul>
+            </section>
 
-			<!-- Merged Section for the Innovative Control System -->
-			<div id="innovative-control-system">
-				<section class="intro">
-					<h3>Innovative Control System for Racing Game Using Real-Life Object Detection</h3>
-					<p><h2 style="color: #00a9e2;">Description:</h2> I am developing a cutting-edge racing game using Unity, where the car is controlled by detecting and tracking real-life objects through a webcam using OpenCV. Instead of the traditional WASD keys, the game leverages computer vision to detect a circular object (like a plate) and uses its rotation to steer the car in the game. This creates a unique and immersive gameplay experience, merging physical objects with virtual control.</p>
-					
-					<p><h2 style="color: #00a9e2;">Skills:</h2></p>
-					<ul>
-						<li><strong>C#</strong></li>
-						<li><strong>Unity</strong></li>
-						<li><strong>Python (Programming Language)</strong></li>
-						<li><strong>OpenCV</strong></li>
-						<li><strong>Design</strong></li>
-					</ul>
+            <section id="innovative-control-system" class="intro">
+                <h3>Innovative Control System for Racing Game Using Real-Life Object Detection</h3>
+                <p><strong style="color: #00a9e2;">Description:</strong> I am developing a cutting-edge racing game using Unity, where the
+                    car is controlled by detecting and tracking real-life objects through a webcam using OpenCV. Instead of the
+                    traditional WASD keys, the game leverages computer vision to detect a circular object (like a plate) and uses
+                    its rotation to steer the car in the game. This creates a unique and immersive gameplay experience, merging
+                    physical objects with virtual control.</p>
 
-					<p><h2 style="color: #00a9e2;">Project Details:</h2></p>
-					<ul>
-						<li><strong>Start Date:</strong> September 2024</li>
-						<li><strong>End Date:</strong> Ongoing</li>
-						<li><strong>Contributors:</strong> Ananthu Shaji, Smithin K</li>
-					</ul>
-				</section>
-			</div>
+                <p><strong style="color: #00a9e2;">Skills:</strong></p>
+                <ul>
+                    <li><strong>C#</strong></li>
+                    <li><strong>Unity</strong></li>
+                    <li><strong>Python (Programming Language)</strong></li>
+                    <li><strong>OpenCV</strong></li>
+                    <li><strong>Design</strong></li>
+                </ul>
 
-			<!-- Contact Section -->
-			<div id="contact">
-				<h3>Contact <hr /></h3>
-				<p>Feel free to contact me on my social media.</p>
-				<nav class="social-media" aria-label="Social Media Links">
-					<a href="https://www.linkedin.com/in/mizhabansar/" target="_blank" aria-label="LinkedIn">
-						<i class='fab fa-linkedin-in'></i>
-					</a>
-					<a href="https://github.com/haveyoumetmiz" target="_blank" aria-label="GitHub">
-						<i class='fab fa-github'></i>
-					</a>
-					<a href="https://replit.com/@MizhabAnsar" target="_blank" aria-label="Replit">
-						<img src="download.png" alt="Replit Logo" style="width: 24px; height: 24px;" />
-					</a>
-					<a href="https://wa.link/pn9q89" target="_blank" aria-label="WhatsApp">
-						<i class='fab fa-whatsapp'></i>
-					</a>
-					<a href="https://www.instagram.com/haveyoumetmiz/" target="_blank" aria-label="Instagram">
-						<i class='fab fa-instagram'></i>
-					</a>
-				</nav>
-			</div>
-		</main>
+                <p><strong style="color: #00a9e2;">Project Details:</strong></p>
+                <ul>
+                    <li><strong>Start Date:</strong> September 2024</li>
+                    <li><strong>End Date:</strong> Ongoing</li>
+                    <li><strong>Contributors:</strong> Ananthu Shaji, Smithin K</li>
+                </ul>
+            </section>
 
-		<footer class="copyright">
-			© 2024 <a href="https://repl.it/@MizhabAnsar" target="_blank">Haveyoumetmiz</a>
-		</footer>
-	</div>
+            <section id="contact">
+                <h3>Contact</h3>
+                <p>Feel free to contact me on my social media.</p>
+                <nav class="social-media">
+                    <a href="https://www.linkedin.com/in/mizhabansar/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/haveyoumetmiz" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://replit.com/@MizhabAnsar" target="_blank"><img src="download.png" alt="Replit Logo"
+                            style="width: 24px; height: 24px;" /></a>
+                    <a href="https://wa.link/pn9q89" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/haveyoumetmiz/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </nav>
+            </section>
+        </main>
+
+        <footer>
+            © 2024 <a href="https://repl.it/@MizhabAnsar" target="_blank">Haveyoumetmiz</a>
+        </footer>
+    </div>
 </body>
+
 </html>
