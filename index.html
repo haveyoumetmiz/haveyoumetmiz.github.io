@@ -1,75 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mizhab's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Mizhab's Logo" />
-    </div>
-    <div class="nav-bar">
-      <a href="#about" class="nav-link">About</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </div>
-  </header>
-  
-  <main>
-    <section id="home">
-      <div class="filter"></div>
-      <div class="intro">
-        <h3>Mizhab Ansar</h3>
-        <p>Game Developer | Unity Enthusiast | C# Programmer</p>
-      </div>
-    </section>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizhab's Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m a game developer with a passion for Unity, C#, and creating immersive experiences. Currently, I'm focused on learning new technologies and building engaging games.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="work">
-        <div class="card">
-          <img src="car-racing.jpg" alt="Car Racing Game with OpenCV">
-          <div class="work-content">
-            <a href="https://github.com/your-username/car-racing-game">Car Racing Game with OpenCV</a>
+    <div class="container">
+      <!-- Header Section -->
+      <header>
+        <a class="logo" href="#home">
+          <img src="port.png" alt="Logo" />
+        </a>
+        <nav>
+          <ul class="nav-bar">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="aboutme.html" class="nav-link">About Me</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
           </div>
-        </div>
-        <div class="card">
-          <img src="selfieQR.jpg" alt="SelfieQR">
-          <div class="work-content">
-            <a href="https://github.com/your-username/selfieQR">SelfieQR</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="mediBridge.jpg" alt="MediBridge - Social Media for Doctors & Patients">
-          <div class="work-content">
-            <a href="https://github.com/your-username/mediBridge">MediBridge - Social Media for Doctors & Patients</a>
-          </div>
-        </div>
-      </div>
-    </section>
+        </nav>
+      </header>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:mizh48.ansar@gmail.com">mizh48.ansar@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/mizhabansar/">LinkedIn</a></li>
-        <li>GitHub: <a href="https://github.com/your-username">GitHub</a></li>
-      </ul>
-    </section>
-  </main>
+      <!-- Main Content -->
+      <main>
+        <!-- Home Section -->
+        <section id="home" class="intro">
+          <div class="filter"></div>
+          <a href="aboutme.html">
+            <h3>Mizhab K Ansar</h3>
+          </a>
+          <div class="photo-column">
+            <a href="aboutme.html">
+              <img src="pic.jpg" alt="Mizhab K Ansar" />
+            </a>
+          </div>
 
-  <footer>
-    <div class="copyright">
-      <p>&copy; 2025 Mizhab Ansar. All Rights Reserved.</p>
+          <!-- Social Media Links -->
+          <nav class="social-media" aria-label="Social Media Links">
+            <a href="https://www.linkedin.com/in/mizhabansar/" target="_blank" aria-label="LinkedIn">
+              <i class='fab fa-linkedin-in'></i>
+            </a>
+            <a href="https://github.com/haveyoumetmiz" target="_blank" aria-label="GitHub">
+              <i class='fab fa-github'></i>
+            </a>
+            <a href="https://replit.com/@MizhabAnsar" target="_blank" aria-label="Replit">
+              <img src="download.png" alt="Replit Logo" style="width: 24px; height: 24px;"/>
+            </a>
+            <a href="https://wa.link/pn9q89" target="_blank" aria-label="WhatsApp">
+              <i class='fab fa-whatsapp'></i>
+            </a>
+            <a href="https://www.instagram.com/haveyoumetmiz/" target="_blank" aria-label="Instagram">
+              <i class='fab fa-instagram'></i>
+            </a>
+          </nav>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <h3>My Projects <hr></h3>
+          <p>Here are some of my projects you may like.</p>
+          <div class="work-box">
+            <div class="work">
+              <!-- Project 1 -->
+              <div class="card">
+                <img class="work-img" src="Logo.png" alt="Booksii.tech Project Image">
+                <a href="https://booksii.tech" target="_blank">
+                  <div class="work-content">Booksii.tech</div>
+                </a>
+              </div>
+              <!-- Project 2 -->
+              <div class="card">
+                <img class="work-img" src="car.png" alt="Innovative Car Racing Game">
+                <a href="car.html" target="_blank">
+                  <div class="work-content">Innovative Car Racing Game</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+          <h3>Contact <hr /></h3>
+          <p>Feel free to contact me on my social media.</p>
+          <nav class="social-media" aria-label="Social Media Links">
+            <a href="https://www.linkedin.com/in/mizhabansar/" target="_blank" aria-label="LinkedIn">
+              <i class='fab fa-linkedin-in'></i>
+            </a>
+            <a href="https://github.com/haveyoumetmiz" target="_blank" aria-label="GitHub">
+              <i class='fab fa-github'></i>
+            </a>
+            <a href="https://replit.com/@MizhabAnsar" target="_blank" aria-label="Replit">
+              <img src="download.png" alt="Replit Logo" style="width: 24px; height: 24px;" />
+            </a>
+            <a href="https://wa.link/pn9q89" target="_blank" aria-label="WhatsApp">
+              <i class='fab fa-whatsapp'></i>
+            </a>
+            <a href="https://www.instagram.com/haveyoumetmiz/" target="_blank" aria-label="Instagram">
+              <i class='fab fa-instagram'></i>
+            </a>
+          </nav>
+        </section>
+      </main>
+
+      <!-- Footer Section -->
+      <footer class="copyright">
+        © 2024 <a href="https://repl.it/@MizhabAnsar" target="_blank">Haveyoumetmiz</a>
+      </footer>
     </div>
-  </footer>
-</body>
+
+    <!-- Replit Badge -->
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  </body>
 </html>
