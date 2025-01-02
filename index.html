@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mizhab K Ansar's Portfolio">
     <title>My Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
-      <!-- Header -->
+      <!-- Header Section -->
       <header>
         <a class="logo" href="#home">
           <img src="port.png" alt="Logo" />
@@ -56,9 +55,6 @@
               <a href="https://github.com/haveyoumetmiz" target="_blank" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://replit.com/@MizhabAnsar" target="_blank" aria-label="Replit">
-                <img src="download.png" alt="Replit Logo" style="width: 24px; height: 24px;" />
-              </a>
               <a href="https://wa.link/pn9q89" target="_blank" aria-label="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
               </a>
@@ -78,14 +74,23 @@
               <!-- Project Cards -->
               <div class="card">
                 <a href="https://booksii.tech" target="_blank">
-					<img class="work-img" src="Logo.png" alt="Booksii.tech Project Image">
-					<div class="work-content">Booksii.tech</div>
-				  </a>
+                  <div class="card-image">
+                    <img class="work-img" src="Logo.png" alt="Booksii.tech Project Image">
+                  </div>
+                  <div class="card-content">
+                    <h4>Booksii.tech</h4>
+                  </div>
+                </a>
               </div>
+
               <div class="card">
-				<a href="car.html" target="_blank"></a>
-                  <img class="work-img" src="car.png" alt="Innovative Control System for Racing Game Using Real-Life Object Detection">
-                  <div class="work-content">Innovative Control System for Racing Game</div>
+                <a href="car.html" target="_blank">
+                  <div class="card-image">
+                    <img class="work-img" src="car.png" alt="Innovative Control System for Racing Game Using Real-Life Object Detection">
+                  </div>
+                  <div class="card-content">
+                    <h4>Innovative Control System for Racing Game</h4>
+                  </div>
                 </a>
               </div>
             </div>
@@ -103,9 +108,6 @@
             <a href="https://github.com/haveyoumetmiz" target="_blank" aria-label="GitHub">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://replit.com/@MizhabAnsar" target="_blank" aria-label="Replit">
-              <img src="download.png" alt="Replit Logo" style="width: 24px; height: 24px;" />
-            </a>
             <a href="https://wa.link/pn9q89" target="_blank" aria-label="WhatsApp">
               <i class="fab fa-whatsapp"></i>
             </a>
@@ -121,5 +123,9 @@
         © 2024 <a href="https://replit.com/@MizhabAnsar" target="_blank">Haveyoumetmiz</a>
       </footer>
     </div>
+
+    <!-- Load JS Scripts at the End for Performance -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
