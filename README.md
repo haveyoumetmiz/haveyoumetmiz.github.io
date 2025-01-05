@@ -8,7 +8,7 @@ Welcome to my portfolio! I am Mizhab, a Computer Science Engineering student wit
 - [Skills](#skills)
 - [Projects](#projects)
   - [Student Book Exchange Hub](#student-book-exchange-hub)
-  - [Car Racing Game](#car-racing-game)
+  - [Innovative Car Racing Game](#car-racing-game)
   - [Highrise Bots](#highrise-bots)
   - [Booksii.tech](#booksii-tech)
 - [Education](#education)
