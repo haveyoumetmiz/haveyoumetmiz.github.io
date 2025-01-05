@@ -8,7 +8,7 @@ Welcome to my portfolio! I am Mizhab, a Computer Science Engineering student wit
 - [Skills](#skills)
 - [Projects](#projects)
   - [Student Book Exchange Hub](#student-book-exchange-hub)
-  - [Innovative Car Racing Game](#car-racing-game)
+  - [Innovative Car Racing/Driving Game](#car-racing-game)
   - [Highrise Bots](#highrise-bots)
   - [Booksii.tech](#booksii-tech)
 - [Education](#education)
@@ -33,7 +33,7 @@ I am a technology enthusiast and aspiring developer. My interests lie in creatin
 A website designed for students to buy and sell books at affordable prices. It connects seniors looking to sell their used books with juniors who need them.
 
 ### Car Racing Game
-An innovative racing game that utilizes real-world object detection through a webcam to control gameplay, offering a unique gaming experience.
+An innovative racing/driving game that utilizes real-world object detection through a webcam to control gameplay, offering a unique gaming experience.
 
 ### Highrise Bots
 Created several bots for the Highrise metaverse using Python. These bots enhance user interaction and provide automated support within the virtual environment.
